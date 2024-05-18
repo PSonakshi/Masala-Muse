@@ -1,0 +1,255 @@
+*{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+  .nav__link {
+    /* position: ; */
+    width: 94%;
+    /* top: 5rem;
+    left: 18px; */
+    background-color: rgb(171, 35, 48);
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav__link a:hover {
+    background-color: lightcoral;
+  }
+  
+  .hide {
+    display: none;
+  }
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(171, 35, 48);
+  }
+  
+  header {
+   
+    text-align: center;
+    color: #090909;
+    width: 100%;
+    font-family: rock salt, cursive;
+    background-color: rgb(171, 35, 48);
+    height: 10em;
+
+    }
+    
+    
+
+
+  
+  footer{
+    background-color: rgb(171, 35, 48);
+    text-align: center;
+    color: #090909;
+    width:100%;
+  }
+  
+  .Menu{
+  display:flex;
+  justify-content: space-evenly;
+  
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: rock salt, cursive;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px;
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  section {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #e5c899;
+    border-radius: 2px;
+    width: 5em;
+    height: 6em;
+    background-color: #e5c899;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  
+  h2 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+  }
+  
+  .interests {
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .containerg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  img.p2{
+    width: 2em;
+    height: 2em;
+  }
+  img.p3{
+    width: 10em;
+    height: 10em;
+  }
+  img.p4{
+    width: 10em;
+    height: 10em;
+  }
+
+ 
+  
+
+ 
+
+  
+  @media screen and (min-width: 801px){
+    .containerg img{
+      width: 30%;
+      height: fit-content;
+    }
+    section{
+      width: 40%;
+      height: fit-content;
+    }
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width:800px){
+    p, li{
+      font-size: 0.9em;
+    }
+    .Menu{
+      display: flex;
+      flex-direction: column;
+      /* align-content:space-; */
+      flex-wrap: wrap;
+    }
+    .Menu img{
+      width: 70%;
+      height: fit-content;
+    }
+    .containerg{
+      display: flex;
+      flex-direction: column;
+    }
+    section{
+      width: 70%;
+      height: 40%;
+    }
+    .containerg img{
+      width: 90%;
+      height: fit-content;
+    }
+    .interests{
+      display: flex;
+      flex-direction: column;
+    }
+    .interests section{
+      width: 90%;
+      height: auto;
+    }
+  }   
